@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <title> Digital Clock Using JavaScript </title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
+<head>
+  <meta charset = "utf-8">
+  <title> Digital Clock Using JavaScript </title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
 
-    <body>
-<style>
-@import url("https://fonts.googleapis.com/css?family=Audiowide&effect=emboss");
+<body>
+  <style>
+  @import url("https://fonts.googleapis.com/css?family=Audiowide&effect=emboss");
 
 }
 .container {
@@ -16,7 +16,7 @@
 
 }
 
- .font-effect-emboss {
+.font-effect-emboss {
   background-color: #4169e1;
   border-radius: 10px;
   width: 35%;
@@ -33,8 +33,8 @@
 
 </style>
 
-        <div class="font-effect-emboss" id = "digital-clock"></div>
-<script> 
+<div class="font-effect-emboss" id = "digital-clock"></div>
+<script>
 
 function Time() {
 
@@ -53,18 +53,18 @@ function Time() {
 
   // Assigning AM / PM according to current hour
   if (hour >= 12) {
-      period = "PM";
+    period = "PM";
   } else {
-      period = "AM";
+    period = "AM";
   }
 
   // Converting the hour in 12-hour format
   if (hour == 0) {
-      hour = 12;
+    hour = 12;
   } else {
-      if (hour > 12) {
-          hour = hour - 12;
-      }
+    if (hour > 12) {
+      hour = hour - 12;
+    }
   }
 
   // Updating hour, minute, and second
@@ -93,5 +93,5 @@ function update(t) {
 
 Time();
 </script>
-    </body>
+</body>
 </html>
